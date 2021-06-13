@@ -32,11 +32,14 @@
     ]
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "express": "^4.17.1",
     "pug": "^3.0.2",
     "regenerator-runtime": "^0.13.7"
   },
   "devDependencies": {
+    "@babel/core": "^7.14.5",
+    "@babel/eslint-parser": "^7.14.5",
     "eslint": "^7.28.0",
     "eslint-plugin-node": "^11.1.0",
     "husky": "^4.3.8",
