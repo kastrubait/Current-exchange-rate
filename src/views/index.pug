@@ -6,10 +6,28 @@ body
   main#main
     h1.ui.center.aligned.header CURRENCY EXCHANGE RATE!
     .ui.container
-      //- div
-      //-   each employee in employees
-      //-     p #{employee.Cur_Name_Eng}
+      .ui.container
+      table.ui.celled.table.center.aligned
+        thead
+          tr
+            th Name_Eng
+            th Abbreviation
+            th Cur_Scale
+            th OfficialRate
+            th Date
+        tbody
+          each employee in exchangeRate
+            tr
+              td #{employee.Cur_Name_Eng}
+              td #{employee.Cur_Abbreviation}
+              td #{employee.Cur_Scale}
+              td #{employee.Cur_OfficialRate}
+              td #{employee.Date}
+             
+        tfoot
+          tr
+            th(colspan='5')
 footer
-  p © #{new Date().getFullYear()} My Company
+  p © #{new Date().getFullYear()} developer by Tatsiana Kastrubai
       
   
